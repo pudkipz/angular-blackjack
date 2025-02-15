@@ -5,11 +5,18 @@ import { Card } from './game/model/card';
   providedIn: 'root'
 })
 export class GameService {
-  deck: Card[];
+  deck: Card[] = [];
   hand: Card[] = [];
+  activeGame: boolean = true;
 
   constructor() {
+    this.newGame();
+  }
+
+  newGame() {
     this.deck = this.freshDeck();
+    this.hand = [];
+    this.activeGame = true;
   }
 
   getHandTotal(): number {
@@ -30,6 +37,10 @@ export class GameService {
     let cardIdx = Math.floor(Math.random() * (this.deck.length));
     let card = this.deck.splice(cardIdx, 1)[0];
     this.hand.push(card);
+
+    if (this.getHandTotal() >= 21) {
+      this.activeGame = false;
+    }
   }
 
   freshDeck(): Card[] {

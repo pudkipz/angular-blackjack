@@ -10,6 +10,19 @@ import { GameService } from '../../game.service';
 export class GameViewComponent {
   gameService = inject(GameService);
 
+  newGame() {
+    this.gameService.newGame();
+  }
+
+  getGameState() {
+    if (this.gameService.activeGame) return 'game';
+    else if (this.getTotal() > 21) return 'lose';
+    else if (this.getTotal() <= 21) return 'win';
+
+    // we won't ever reach this, but I like the idea of being explicit
+    else return null;
+  }
+
   getTotal() {
     return this.gameService.getHandTotal();
   }

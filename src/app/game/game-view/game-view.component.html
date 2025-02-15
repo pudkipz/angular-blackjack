@@ -8,6 +8,17 @@
 
 <p>Total: {{getTotal()}}</p>
 
+@if (getGameState() == 'game') {
 <button (click)="drawCard()">Hit</button>
-
 <button>Stand</button>
+}
+
+@else {
+@if (getGameState() == 'lose') {
+<h2>You lose... :(</h2>
+} @else {
+<h2>You win! :D</h2>
+}
+<label for="play-again-btn">Play again?</label>
+<button name="play-again-btn" (click)="newGame()">Yes!</button>
+}
