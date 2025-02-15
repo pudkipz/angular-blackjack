@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { GameService } from '../../game.service';
 
 @Component({
   selector: 'app-game-view',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './game-view.component.css'
 })
 export class GameViewComponent {
+  gameService = inject(GameService);
 
+  getDeck() {
+    return this.gameService.deck
+  }
 }
