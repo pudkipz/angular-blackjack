@@ -12,6 +12,10 @@ import { GameOverComponent } from './game-over/game-over.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    GameViewComponent,
+    GameOverComponent,
   ]
 })
 export class GameModule { }
