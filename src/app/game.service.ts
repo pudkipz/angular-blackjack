@@ -12,7 +12,14 @@ export class GameService {
     this.deck = this.freshDeck();
   }
 
-  freshDeck() {
+  drawCard(): void {
+    let cardIdx = Math.floor(Math.random() * (this.deck.length));
+    let card = this.deck.splice(cardIdx, 1)[0];
+    this.hand.push(card);
+    console.log(this.deck)
+  }
+
+  freshDeck(): Card[] {
     let deck = [];
     let suits = ['spades', 'hearts', 'clubs', 'diamonds'];
     for (let suit of suits) {
@@ -27,7 +34,7 @@ export class GameService {
     return deck;
   }
 
-  printCard(value: number, suit: string) {
+  printCard(value: number, suit: string): string {
     // TODO: consider making 'name': string instead of function
     switch (value) {
       case 1:

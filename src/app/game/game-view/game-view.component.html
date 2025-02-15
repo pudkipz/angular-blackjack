@@ -1,1 +1,11 @@
 <h2>Your cards:</h2>
+<!-- TODO: alternate message for empty hand -->
+<ul>
+  @for (card of getHand(); track $index) {
+  <li>{{card.name()}}</li>
+  }
+</ul>
+
+<button (click)="drawCard()">Hit</button>
+
+<button>Stand</button>
