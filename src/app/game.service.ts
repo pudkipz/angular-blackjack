@@ -14,8 +14,14 @@ export class GameService {
 
   getHandTotal(): number {
     let total = 0;
+    let nAces = 0;
     for (let card of this.hand) {
       total += card.value;
+      if (card.value == 1) nAces++;
+    }
+    // allow aces to be 1 or 11 (1 + 10)
+    for (let i = 0; i < nAces; i++) {
+      if (total + 10 < 21) total += 10;
     }
     return total;
   }
