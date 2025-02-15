@@ -12,11 +12,18 @@ export class GameService {
     this.deck = this.freshDeck();
   }
 
+  getHandTotal(): number {
+    let total = 0;
+    for (let card of this.hand) {
+      total += card.value;
+    }
+    return total;
+  }
+
   drawCard(): void {
     let cardIdx = Math.floor(Math.random() * (this.deck.length));
     let card = this.deck.splice(cardIdx, 1)[0];
     this.hand.push(card);
-    console.log(this.deck)
   }
 
   freshDeck(): Card[] {

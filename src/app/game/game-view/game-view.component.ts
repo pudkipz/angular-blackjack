@@ -10,6 +10,10 @@ import { GameService } from '../../game.service';
 export class GameViewComponent {
   gameService = inject(GameService);
 
+  getTotal() {
+    return this.gameService.getHandTotal();
+  }
+
   drawCard() {
     this.gameService.drawCard();
   }
