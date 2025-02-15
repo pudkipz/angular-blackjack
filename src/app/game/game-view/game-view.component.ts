@@ -14,10 +14,15 @@ export class GameViewComponent {
     this.gameService.newGame();
   }
 
+  stand() {
+    this.gameService.stand();
+  }
+
   getGameState() {
     if (this.gameService.activeGame) return 'game';
+    else if (this.getTotal() == 21) return 'win';
     else if (this.getTotal() > 21) return 'lose';
-    else if (this.getTotal() <= 21) return 'win';
+    else if (this.getTotal() < 21) return 'game-over';
 
     // we won't ever reach this, but I like the idea of being explicit
     else return null;

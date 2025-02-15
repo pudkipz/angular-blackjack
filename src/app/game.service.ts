@@ -19,6 +19,10 @@ export class GameService {
     this.activeGame = true;
   }
 
+  stand() {
+    this.activeGame = false;
+  }
+
   getHandTotal(): number {
     let total = 0;
     let nAces = 0;
