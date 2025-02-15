@@ -56,13 +56,45 @@ export class GameService {
           suit: suit,
           value: value,
           name: () => this.printCard(value, suit),
+          imgPath: this.getImagePath(value, suit),
         });
       }
     }
     return deck;
   }
 
+  getImagePath(_: number, suit: string): string {
+    switch (suit) {
+      case 'spades':
+        return '/assets/spades.svg';
+      case 'hearts':
+        return '/assets/hearts.svg';
+      case 'clubs':
+        return '/assets/clubs.svg';
+      case 'diamonds':
+        return '/assets/diamonds.svg';
+      default:
+        return '';
+    }
+  }
+
   printCard(value: number, suit: string): string {
+    // TODO: consider making 'name': string instead of function
+    switch (value) {
+      case 1:
+        return `A`;
+      case 11:
+        return `J`;
+      case 12:
+        return `Q`;
+      case 13:
+        return `K`;
+      default:
+        return `${value}`;
+    }
+  }
+
+  printCardVerbose(value: number, suit: string): string {
     // TODO: consider making 'name': string instead of function
     switch (value) {
       case 1:
@@ -76,6 +108,5 @@ export class GameService {
       default:
         return `${value} of ${suit}`;
     }
-
   }
 }
