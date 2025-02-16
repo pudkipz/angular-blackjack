@@ -1,0 +1,36 @@
+<h2>Your cards:</h2>
+<!-- TODO: alternate message for empty hand -->
+<ul class="hand">
+  @for (card of getHand(); track $index) {
+  <li>
+    <div class="card">
+      <h3 class="card-value">{{card.name()}}</h3>
+      <img class="card-suit" src="{{card.imgPath}}" />
+    </div>
+  </li>
+  }
+</ul>
+
+<p>Total: {{getTotal()}}</p>
+
+@if (getGameState() == 'game') {
+<button (click)="drawCard()">Hit</button>
+<button (click)="stand()">Stand</button>
+}
+
+@else {
+@switch (getGameState()) {
+@case ('lose') {
+<h2>You lose... :(</h2>
+}
+@case ('win') {
+<h2>You win! :D</h2>
+}
+@case ('game-over') {
+<h2>You're A-OK.</h2>
+}
+}
+
+<label for="play-again-btn">Play again?</label>
+<button name="play-again-btn" (click)="newGame()">Yes!</button>
+}

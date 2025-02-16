@@ -1,0 +1,28 @@
+.hand {
+    display: flex;
+    list-style-type: none;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 132px;
+    margin-right: 8px;
+    display: grid;
+    justify-content: space-between;
+    box-shadow: 6px 8px 3px silver;
+}
+
+.card-suit {
+    width: 32px;
+    grid-column: 2;
+    margin: 10px;
+}
+
+.card-value {
+    font-size: 36px;
+    grid-column: 1;
+    grid-row: 2;
+    margin: 10px;
+}

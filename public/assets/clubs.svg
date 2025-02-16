@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="84.754112mm"
+   height="98.342712mm"
+   viewBox="0 0 84.754112 98.342712"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="clubs.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="1.0167041"
+     inkscape:cx="-190.32086"
+     inkscape:cy="288.6779"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1272"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="-96.907604,265.34945"
+       orientation="1,0"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-67.28121,276.57436"
+       orientation="0,-1"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-84.026563,248.23607"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-46.671545,243.81971"
+       orientation="1,0"
+       id="guide4"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-125.24589)">
+    <path
+       sodipodi:nodetypes="czcccczczc"
+       id="rect3667"
+       d="m 159.32848,42.437324 c -15.56117,-7.433358 -38.45114,1.433192 -33.0354,21.434446 5.27767,19.491372 28.06977,15.213938 35.95127,3.349191 -3.28806,22.496274 -9.0626,25.998579 -12.52376,30.882182 h 36.74639 c -3.72315,-5.222619 -10.48377,-8.385908 -14.44847,-31.190486 7.94184,11.844769 31.81694,15.950962 37.01836,-3.258785 5.11669,-18.896803 -17.94763,-29.658299 -33.28485,-21.103846 14.70693,-9.875727 19.98855,-42.3104535 -7.86635,-42.3104535 -28.12985,0 -23.43648,33.0688745 -8.55719,42.1977515 z"
+       style="color:#000000;display:block;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.479145;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none" />
+  </g>
+</svg>
